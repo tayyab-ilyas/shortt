@@ -1,3 +1,3 @@
 #Shortt
 
--A simple URL shortner with clean UI
+A simple URL shortner with clean UI
