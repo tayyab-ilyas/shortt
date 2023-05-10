@@ -1,3 +1,3 @@
-#Shortt
+<h1>Shortt</h1>
 
-A simple URL shortner with clean UI (under development)
+<p>A simple URL shortner with clean UI (under development)</p>
