@@ -44,7 +44,7 @@ function App() {
     
   
     
-      <div className='bg-blue-700 p-10'>
+      <div className='bg-blue-700 p-7'>
         
                 
           <div className='flex justify-center'>
