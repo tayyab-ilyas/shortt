@@ -37,21 +37,31 @@ const LinkResult = ({ inputValue }) => {
   }, [copied]);
 
   if (loading) {
-    return <p className="noData">Loading...</p>;
+    return (
+      <div className="flex justify-center">
+        <p>Loading...</p>
+      </div>
+    );
   }
   if (error) {
-    return <p className="noData">Something went wrong</p>;
+    return <div className="flex justify-center"><p>Something went wrong</p></div>;
   }
 
   return (
     <>
       {shortenLink && (
-        <div className="result">
-          <p>{shortenLink}</p>
+        <div>
+            <div className="flex justify-center" >
+          <p className="">{shortenLink}</p>
+          </div>
           <CopyToClipboard text={shortenLink} onCopy={() => setCopied(true)}>
-            <button className={copied ? "copied" : ""}>
-              Copy to Clipboard
-            </button>
+            <div className="flex justify-center">
+              <div className="flex font-[poppins] justify-center bg-blue-700 hover:bg-[#0099ff] text-white px-4 py-2 rounded-3xl mt-3 w-[20vw]">
+                <button className={copied ? "copied" : ""}>
+                  Copy to Clipboard
+                </button>
+              </div>
+            </div>
           </CopyToClipboard>
         </div>
       )}
